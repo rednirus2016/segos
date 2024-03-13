@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>@yield('meta_title')</title>
+    <meta name="title" content="@yield('meta_title')">
+    <meta name="keywords" content="@yield('meta_keywords')">
+    <meta name="description" content="@yield('meta_description')">
+
+    <meta property="og:title" content="@yield('meta_title')" />
+    <meta property="og:description" content="@yield('meta_description')" />
+    <meta property="og:url" content="{{ Request::fullUrl() }}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="google-site-verification" content="nnqCRSzVzF82-n3JEq7p4APu2qrddmykGXiJq_Qc0bI" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="@yield('meta_description')" />
+    <meta name="twitter:title" content="@yield('meta_title')" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="/assets/images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+
+</head>
+<!--header-->
+
+<div class="navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+
+            <a class="navbar-brand logo" href="/">
+                <img id="logo-img" class="img-fluid" src="/assets/images/logo_pnd.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Gallery </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="#">DERMATOLOGY</a>
+                            <a class="dropdown-item" href="#">SKIN CARE</a>
+                            <a class="dropdown-item" href="#">HAIR CARE</a>
+                            <a class="dropdown-item" href="#">Page 4</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a href="dropdown-item" href="#">Menu</a>
+                        </div>
+                    <li class="nav-item active"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item cta active"><a href="#" class="nav-link">Book a table</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+@yield('content')
+
+
+<!-- footer section start -->
+<div class="footer_section bg-secondary">
+
+
+
+
+
+    <!--<div class="location_main">
+               <div class="location_text"><img src="/assets/images/map-icon.png"><span class="padding_left_5"><a href="#">Location</a></span></div>
+               <div class="location_text center"><img src="/assets/images/call-icon.png"><span class="padding_left_5"><a href="#">Call ; 01 1234567890</a></span></div>
+               <div class="location_text right"><img src="/assets/images/mail-icon.png"><span class="padding_left_5"><a href="#">demo@gmail.com</a></span></div>
+            </div>-->
+    <div class="footer_section_2">
+       <div class="container">
+        <div class="row">
+
+
+            <div class="col-lg-3">
+                <img id="logo-img" class="img-fluid" src="/assets/images/logo_pnd.png" alt="" width="200px">
+                </a>
+                <br>
+
+
+                <p class="footer_text">There are many variations of passages of Lorem Ipsum available, but the majority
+                    havThere are many variations of passages of Lorem Ipsum available, but the majority hav</p>
+            </div>
+            <div class="col-lg-3 border-primary">
+                <h2 class="footer_taital">Services Link</h2>
+
+                <br>
+                <br>
+                <br>
+                <p class="footer_text">There are many variations of passages of Lorem Ipsum available, but the majority
+                    havThere are many variations of passages of Lorem Ipsum available, but the majority hav</p>
+            </div>
+            <div class="col-lg-3">
+                <h2 class="footer_taital">heading</h2>
+                <br>
+
+                <br>
+                <br>
+                <p class="footer_text">There are many variations of passages of Lorem Ipsum available, but the majority
+                    havThere are many variations of passages of Lorem Ipsum available, but the majority hav</p>
+
+
+
+            </div>
+            <div class="col-lg-3">
+
+                <h2 class="footer_taital"></h2>
+                <input type="text" class="Enter_text" placeholder="Enter Your Email" name="Enter Your Email">
+                <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                <div class="social_icon">
+                    <ul>
+                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/linkedin-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/youtub-icon.png"></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- footer section end -->
+
+<!-- copyright section start -->
+<div class="copyright_section bg-success">
+
+    <div class="container-fluid">
+        <p class="copyright_text">Copyright 2020 All Rights Reserved.<a href="https://html.design"> Free html
+                Templates</a></p>
+    </div>
+</div>
+<!-- Javascript files-->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/jquery-3.0.0.min.js"></script>
+<script src="/assets/js/plugin.js"></script>
+<!-- sidebar -->
+<script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+<!-- javascript -->
+<script src="/assets/js/owl.carousel.js"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
+
+<div class="donate_section layout_padding">
+    <div class="container">
+      <h1 class="donate_taital">Donat pepole Says</h1>
+      <div class="donate_taital_main">
+        <div id="main_slider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="donate_left">
+                <div class="client_img"><img src="/assets/images/images.jpg" alt="website template image"></div>
+              </div>
+              <div class="donate_right">
+                <h3 class="client_name_text">Mardo Merk</h3>
+                <p class="dummy_text">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefinedIf you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="donate_left">
+                <div class="client_img"><img src="/assets/images/images.jpg" alt="website template image"></div>
+              </div>
+              <div class="donate_right">
+                <h3 class="client_name_text">Mardo Merk</h3>
+                <p class="dummy_text">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefinedIf you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="donate_left">
+                <div class="client_img"><img src="/assets/images/images.jpg" alt="website template image"></div>
+              </div>
+              <div class="donate_right">
+                <h3 class="client_name_text">Mardo Merk</h3>
+                <p class="dummy_text">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefinedIf you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a> <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a></div>
+      </div>
+    </div>
+  </div>
