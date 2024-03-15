@@ -105,6 +105,7 @@ Route::get('/privacy-policy', function () {
 
 
 Route::post('/enquiry/store','EnquirysController@store');
+Route::post('/enquiry/store/downoad','EnquirysController@storeDownload');
 
 
 

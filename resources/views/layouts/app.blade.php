@@ -884,9 +884,8 @@ Embracing Innovation</b></p>
          
                                
 <div class="download">
-	<span class="tooltiptext" style="margin-left: -161px !important;">&nbsp; Download Excel &nbsp;</span>
     <ul>
-        <li><a href="assets/images/Product list.pdf" class="pu-button " style="color:#fff; line-height:40px; background-color:red; text-align:center; font-weight:700; min-height:40px; min-width:131px; transform: perspective(var(--e-transform-perspective,0)) rotate(var(--e-transform-rotateZ,0)) rotateX(var(--e-transform-rotateX,0)) rotateY(var(--e-transform-rotateY,0)) translate(var(--e-transform-translate,0)) translateX(var(--e-transform-translateX,0)) translateY(var(--e-transform-translateY,0)) scaleX(calc(var(--e-transform-flipX, 1)  var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1)  var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX,0)) skewY(var(--e-transform-skewY,0));" target="_blank">Product List</a></li>
+        <li><button data-toggle="modal" data-target="#exampleModal" style="color:#fff; line-height:40px; background-color:red;text-align:center; font-weight:700; min-height:40px; min-width:131px; transform: perspective(var(--e-transform-perspective,0)) rotate(var(--e-transform-rotateZ,0)) rotateX(var(--e-transform-rotateX,0)) rotateY(var(--e-transform-rotateY,0)) translate(var(--e-transform-translate,0)) translateX(var(--e-transform-translateX,0)) translateY(var(--e-transform-translateY,0)) scaleX(calc(var(--e-transform-flipX, 1)  var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1)  var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX,0)) skewY(var(--e-transform-skewY,0));">Product List</button></li>
        
     </ul>  
   </div>
@@ -914,7 +913,7 @@ Embracing Innovation</b></p>
                     </button>
                   </div>
                   <div class="modal-body">
-                     <form action="/enquiry/store" method="POST">
+                     <form action="/enquiry/store/downoad" method="POST">
                                        @csrf
                               <div class="row">
                                  <div class="col-md-6 col-sm-12">
@@ -953,6 +952,61 @@ Embracing Innovation</b></p>
                  </div>
               </div>
             </div>
+
+
+              <!-- Button to trigger the modal -->
+              <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+               Product List
+           </button>
+           
+           <!-- Modal -->
+           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                   <div class="modal-content">
+                       <div class="modal-header">
+                           <h3 class="text-white text-center">Online Business Enquiry</h3>
+                           <p class="text-white text-center pb-3">(No job request)</p>
+                       </div>
+                       <div class="modal-body" style="z-index: 999;">
+                           <form action="/enquiry/store/downoad" method="POST">
+                               @csrf 
+                               <div class="row">
+                                   <div class="col-md-6 col-sm-12">
+                                       <div class="contact-form-section">
+                                           <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-6 col-sm-12">
+                                       <div class="contact-form-section">
+                                           <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-6 col-sm-12">
+                                       <div class="contact-form-section">
+                                           <input type="text" class="form-control" placeholder="Phone" id="phone" name="phone" required>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-6 col-sm-12">
+                                       <div class="contact-form-section">
+                                           <input type="text" class="form-control" placeholder="City" id="city" name="city" required>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-12 col-sm-12">
+                                       <div class="contact-form-section">
+                                           <textarea class="form-control" id="message" name="message" rows="4" placeholder="Message" style="height: 100px;" required></textarea>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-12 col-sm-12 mt-3 mx-auto">
+                                       <button type="submit" class="btn btn-primary col-md-12 col-sm-12">Send</button>
+                                   </div>
+                               </div>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- Closed Modal -->
+      
             
  
       <!-- //end #wrapper -->
